@@ -1,0 +1,137 @@
+#main{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    width: 810px;
+    background-color: #c9d2e6ef;   
+    border-radius:15px;
+}
+#left{
+    display: flex;
+    flex-direction: column;
+    background-color: #b2cacab4;
+    border-radius:15px;
+    padding: 5px;
+    gap: 10px;
+}
+#right{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+#describe{
+    height: 200px;
+    background-color: #f3f5f5e7;
+    border-radius:15px;
+    color: black;
+    width: 225px;
+} 
+#title{
+    border-radius:15px;
+    background-color: #ecedf3e7;
+    color: black;
+    width: 225px;
+}
+#lenguage{
+    border-radius:15px;
+    background-color: #f7f8fde7;
+    color: black;
+    width: 225px;
+}
+#slct{
+    width: 178px;
+    background-color: #fbfbfde7;
+    border-radius:15px;
+    color: black;
+    width: 233px;
+}
+#video{
+    border-radius:15px;
+    background-color: #eeeef7e7;
+    color: black;
+    width: 225px;
+}
+#conts{
+    display: flex;
+    flex-direction: row ;
+    gap:50px;
+    width:max-content ;
+    position: relative;
+}
+#total,#front,#back,#full,#soft{
+    background-color: #3d6e81e7;
+    color: white;
+    border-radius:5px;
+    height: 32px;
+    vertical-align: middle;
+}
+#btnsForm{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    
+}
+#clear{
+    border-radius:15px;
+    background-color: #3d6e81e7;
+    color: aliceblue;
+}
+#save{
+    border-radius:15px;
+    background-color: #3d6e81e7;
+    color: aliceblue;
+}
+#show{
+    border-radius:15px;
+    background-color: #3d6e81e7;
+    color: aliceblue;
+}
+#divBusca{
+    background-color: #9bb9fcef;
+    border-radius:15px;
+    width:536px;
+    height:32px;
+  }
+#txtBusca{
+    float:left;
+    background-color: white;
+    border-radius:15px;
+    padding-left:5px;
+    font-style:italic;
+    font-size:18px;
+    border:none;
+    height:32px;
+    width:449px;
+}
+#search{
+    width: 80px;
+    border-radius:15px;
+    height: 32px;
+    background-color: #3d6e81e7;
+}
+#cards{
+    width: 536px;
+    height: 447px;
+    overflow-y:scroll;
+    height: 635px;
+    padding: 5px;
+}
+.card{
+    background-color: #b2cacab4;
+    color: black;
+    border-radius:5px;
+}
+button{
+    background-color: #3d6e81e7;
+    border-radius:5px;
+    color: aliceblue
+}
+#footer{
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 805px;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
