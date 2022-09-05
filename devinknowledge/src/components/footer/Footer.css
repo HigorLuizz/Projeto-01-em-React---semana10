@@ -1,0 +1,17 @@
+.DarkModeMain{
+    background-color: black;
+    color: white;
+}
+.DarkModeBusca{
+    background-color: #404147e7;
+}
+.DarkModeLeft, .DarkModeCards{
+    background-color: grey;
+}
+.LightModeMain{
+    background-color: #c9d2e6ef;
+    color: black;
+}
+.LightModeLeft, .LightModeCards{
+    background-color: #b2cacab4;
+} 

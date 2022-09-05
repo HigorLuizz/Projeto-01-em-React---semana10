@@ -1,4 +1,4 @@
-#main{
+main{
     display: flex;
     flex-direction: row;
     gap:20px;
@@ -6,14 +6,14 @@
     background-color: #c9d2e6ef;   
     border-radius:15px;
 }
-#left{
+/* #left{
     display: flex;
     flex-direction: column;
     background-color: #b2cacab4;
     border-radius:15px;
     padding: 5px;
     gap: 10px;
-}
+} */
 #right{
     display: flex;
     flex-direction: column;
@@ -135,3 +135,20 @@ button{
     color: black;
     text-align: center;
 }
+.DarkModeMain{
+    background-color: black;
+    color: white;
+}
+.DarkModeBusca{
+    background-color: #404147e7;
+}
+.DarkModeLeft, .DarkModeCards{
+    background-color: grey;
+}
+.LightModeMain{
+    background-color: #c9d2e6ef;
+    color: black;
+}
+.LightModeLeft, .LightModeCards{
+    background-color: #b2cacab4;
+} 

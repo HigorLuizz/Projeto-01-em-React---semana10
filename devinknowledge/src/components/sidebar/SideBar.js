@@ -1,6 +1,10 @@
 import { useState } from "react"
+import { useTips } from "../../contexts/TipsContext"
+import { useTheme } from "../../contexts/ThemeContext"
 
-export default function SideBar({tipList, setTipList}){
+export default function SideBar(){
+  const {tipList,setTipList} = useTips()
+  const {theme} = useTheme()
 
     const [tip, setTip] = useState({
         id:1,
@@ -20,34 +24,26 @@ export default function SideBar({tipList, setTipList}){
                 ...tipList,
                 tipWithID
             ])
-            // localStorage.meuArr = JSON.stringify(tipList)
-            
-            
-            // for (const i in todasDicas) {
-            //     todasDicas[i].id = i
-            //     contTotais++
-            //     document.getElementById("total").innerHTML = "Total "+contTotais
-            //     if (todasDicas[i].categoria == "FrontEnd"){
-            //         contFront++
-            //         document.getElementById("front").innerHTML = "FrontEnd "+contFront
-            //     }else if(todasDicas[i].categoria == "BackEnd"){
-            //         contBack++
-            //         document.getElementById("back").innerHTML = "BackEnd "+contBack
-            //     }else if(todasDicas[i].categoria == "FullStack"){
-            //         contFull++
-            //         document.getElementById("full").innerHTML = "FullStack "+contFull
-            //     }else if(todasDicas[i].categoria == "SoftSkills"){
-            //         contSoft++
-            //         document.getElementById("soft").innerHTML = "SoftSkills "+contSoft
-            //     }
-                
-            // }
             alert("Dica salva com sucesso!")     
         }
+        
     
         }
+        function limparFormulario(){
+          return(
+            setTip({
+              titulo:'',
+              linguagem:'',
+              categoria:'',
+              descricao: '',
+              video:''
+            })
+          )
+        }
     return (
-        <div id="left">
+        <div 
+        id="left"
+        className={theme==="LightMode"? 'LightModeLeft':"DarkModeLeft"}>
           <h1>DevinKnowledge </h1>
           <h3>Learn, Code and Save</h3>
           <form id="form">
@@ -127,7 +123,7 @@ export default function SideBar({tipList, setTipList}){
             />
           </form>
           <div id="btnsForm">
-            <button id="clear" onClick="limparFormulario()">
+            <button id="clear" onClick={limparFormulario}>
               Limpar
             </button>
             <button id="save" onClick={clickSave}>
